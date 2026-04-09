@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Captive Portal Template for OPNsense
+
+<img width="1279" height="679" alt="image" src="https://github.com/user-attachments/assets/bdce4ae5-238e-4a2a-9406-3054158d5e05" />
+
+<img width="1277" height="673" alt="image" src="https://github.com/user-attachments/assets/63110d24-f64c-4782-a2b0-58534c62551a" />
 
 ## Getting Started
 
@@ -6,31 +10,18 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## For buidling and upload to OPNsense
+1. Run `npm run build`
+2. Pack all content inside `out` folders to zip
+   <img width="742" height="432" alt="image" src="https://github.com/user-attachments/assets/4006c5f1-f4bf-4ff1-9480-0525f4957384" />
+3. Go to captive portal settings in OPNsense and upload the file it
+   <img width="489" height="332" alt="image" src="https://github.com/user-attachments/assets/60650886-18a9-433a-a267-073ad676f700" />
+4. Then settings your zone to use this template
+   <img width="612" height="177" alt="image" src="https://github.com/user-attachments/assets/a4d72c18-341c-4a2e-a257-44fd094dc36a" />
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# License
+This project is under MIT License
