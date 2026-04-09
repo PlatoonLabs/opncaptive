@@ -1,0 +1,44 @@
+.bc {
+    z-index: 0;
+    position: fixed;
+    bottom: 5vh;
+    width: 100%;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .bc {
+        gap: 0.75rem;
+        bottom: 3vh;
+    }
+    .ptl-brand img {
+        width: 120px !important;
+    }
+    .deciso-brand img {
+        width: 130px !important;
+    }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+    .ptl-brand img {
+        width: 170px !important;
+    }
+    .deciso-brand img {
+        width: 190px !important;
+    }
+}
+
+.ptl-brand img { width: 250px; height: auto; }
+.ptl-brand .hover-logo { position: absolute; top: 0; left: 0; opacity: 0; }
+.ptl-brand:hover .hover-logo { opacity: 1; }
+.ptl-brand:hover .regular-logo { opacity: 0; }
+
+.deciso-brand img { width: 300px; height: auto; }
+.deciso-brand .hover-logo { position: absolute; top: 0; left: 0; opacity: 0; }
+.deciso-brand:hover .hover-logo { opacity: 1; }
+.deciso-brand:hover .regular-logo { opacity: 0; }
